@@ -3,85 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Faujan Shaikh | Python Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; }
-    header { background: #111; color: #fff; padding: 20px; text-align: center; }
-    header img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
-    nav { background: #333; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: #fff; padding: 10px 15px; text-decoration: none; }
-    nav a:hover { background: #555; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { margin-bottom: 20px; color: #333; }
-    .skills span { display: inline-block; background: #eee; margin: 5px; padding: 8px 12px; border-radius: 5px; }
-    .card { background: #f9f9f9; padding: 20px; margin-bottom: 15px; border-radius: 8px; }
-    footer { text-align: center; padding: 20px; background: #111; color: #fff; }
-    @media (max-width: 600px) {
-      nav { flex-direction: column; }
-      header img { width: 90px; height: 90px; }
+    :root {
+      --bg: #0d0d0d;
+      --text: #ffffff;
+      --accent: #00ffae;
+      --card: #1a1a1a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { color: var(--accent); margin: 10px 0; }
+
+    .btn {
+      margin: 10px;
+      padding: 12px 20px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      border: 1px solid var(--accent);
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+    }
+
+    @media(max-width: 600px) {
+      h1 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Profile Photo">
-  <h1>Your Name</h1>
-  <p>Your Title / Role</p>
+  <h1>Turning Ideas into Powerful Python Solutions</h1>
+  <h2>Python Developer helping businesses and individuals build smart, scalable applications</h2>
+  <div>
+    <a href="#contact" class="btn">Hire Me</a>
+    <a href="https://github.com/Faujanshaikh" class="btn">View Work</a>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <section id="about">
-  <h2>About</h2>
-  <p>Write a short summary about yourself here based on your resume.</p>
+  <h2>About Me</h2>
+  <p>
+    I'm Faujan Shaikh, a passionate Python developer focused on building efficient and scalable backend systems.
+    I love solving real-world problems with clean and practical code.
+  </p>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
     <span>Python</span>
-  </div>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Job Title</h3>
-    <p>Company Name | Year</p>
-    <p>Describe your responsibilities and achievements.</p>
+    <span>Django</span>
+    <span>SQL</span>
+    <span>Problem Solving</span>
   </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
   <div class="card">
-    <h3>Project Name</h3>
-    <p>Short description of the project.</p>
-    <p><a href="#">Live Demo</a> | <a href="#">GitHub</a></p>
+    <h3>Projects Coming Soon</h3>
+    <p>
+      I am currently working on real-world projects that will be added here soon. Stay tuned!
+    </p>
   </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>LinkedIn: <a href="#">Profile Link</a></p>
-  <p>GitHub: <a href="#">Profile Link</a></p>
+  <p>Email: faujanshaikh01@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/Faujanshaikh" class="btn">Visit</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/faujan-shaikh-4056823bb" class="btn">Connect</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Your Name</p>
+  <p>© 2026 Faujan Shaikh</p>
 </footer>
+
+<script>
+  // Simple fade-in animation
+  const cards = document.querySelectorAll('.card');
+  window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+      const top = card.getBoundingClientRect().top;
+      if(top < window.innerHeight - 50){
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
+
+<!-- HERO COPY VARIATIONS -->
+
+<!-- 1. CONFIDENT -->
+<!-- Headline: Build Fast. Scale Smart. Ship with Python. -->
+<!-- Subheadline: I develop powerful backend systems for startups and individuals who want reliable and scalable solutions. -->
+<!-- CTA: Hire Me | View My Work -->
+<!-- About Teaser: Passionate Python developer focused on real-world impact.
+     Turning ideas into functional and scalable applications. -->
+
+<!-- 2. CREATIVE -->
+<!-- Headline: Code That Thinks. Solutions That Work. -->
+<!-- Subheadline: Helping creators and businesses transform ideas into intelligent Python-powered systems. -->
+<!-- CTA: Let's Build | Explore Projects -->
+<!-- About Teaser: I don’t just write code — I solve problems.
+     Building systems that are simple, smart, and scalable. -->
+
+<!-- 3. MINIMAL -->
+<!-- Headline: Python Developer. Problem Solver. -->
+<!-- Subheadline: I build clean and efficient backend solutions for modern applications. -->
+<!-- CTA: Contact Me | GitHub -->
+<!-- About Teaser: Focused on simplicity and performance.
+     Writing code that delivers results. -->
+
+<!-- PROJECT DESCRIPTION TEMPLATE -->
+<!--
+Project Title
+Short Hook: One-line impactful summary
+
+Description:
+Explain what problem it solves and how you built it.
+
+Tech Stack:
+Python, Django, SQL
+
+Key Features:
+- Feature 1
+- Feature 2
+- Feature 3
+
+Result:
+What impact or learning you got
+-->
